@@ -1,0 +1,51 @@
+.navbar{
+    position: sticky;
+    top: 0%;
+    background-color: olivedrab;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 5px;
+    .title{
+        h1{
+            color: aliceblue;
+            font-size: 40px;
+        }
+        .text{
+            text-decoration: none;
+        }
+    }
+    .navsection{
+        display: flex;
+        ul{
+            display: flex;
+            align-items:center;
+            gap: 8px;
+            // gap:5px;
+            router-link{
+                text-decoration: none;
+            }
+            .home{
+                text-decoration: none;
+            }
+            .about{
+                text-decoration: none;
+            }
+            .cart{
+                text-decoration: none;
+            }
+            .login{
+                text-decoration: none;
+            }
+            li{
+                color: aliceblue;
+                list-style-type:none;
+                font-size: 20px;
+                background: tomato;
+                margin: 5px;
+                padding: 6px 12px;
+                border: 1px solid green;
+                border-radius: 10px;
+            } 
+        }
+    }
+}

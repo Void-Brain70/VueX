@@ -1,0 +1,91 @@
+.products
+{
+    h1{
+        color: tomato;
+        text-align: center;
+    }
+    .productRating{
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        justify-content:center;
+        gap: 15px;
+        button{
+            background: tomato;
+            padding: 10px;
+            border: greenyellow;
+            border-radius: 8px;
+            color: aliceblue;
+            font-weight: bold;
+        }
+    }
+    .productPrice{
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        justify-content:center;
+        gap: 15px;
+        button{
+            background: tomato;
+            padding: 10px;
+            border: greenyellow;
+            border-radius: 8px;
+            color: aliceblue;
+            font-weight: bold;
+        }
+    }
+    .card{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        .productcard{
+            border: 1 px soild whitesmoke;
+            border-radius: 5px;
+            .title{
+                margin: 10px;
+                text-align: center;
+                font-weight: bold;
+            }
+            margin: 30px;
+            background-color: antiquewhite;
+            text-align: center;
+            padding: 20px 20px;
+            .img{
+                width: 200px;
+                max-width: 100%;
+            }
+            .content{
+                margin: 5px;
+                .des{
+                    text-align: justify;
+                }
+                .cat{
+                    margin-top: 10px;
+                    text-align: left;
+                    font-weight: bold;
+                }
+                .rating{
+                    margin-top: 10px;
+                    text-align: left;
+                    font-weight: bold;
+                }
+                .price{
+                    margin-top: 10px;
+                    text-align: left;
+                    font-weight: bold;
+                }
+            }
+            .addcard{
+                button{
+                    background: skyblue;
+                    padding: 15px;
+                    border: 1px solid gray ;
+                    border-radius: 8px;
+                    font-weight: bold;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    
+
+}
