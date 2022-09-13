@@ -11,7 +11,7 @@
         <p class="price">Price: {{ product.price}}</p>
     </div>
     <div class="addcard">
-        <button  @click="addTOcart(product)"> Add to Cart </button>
+        <button  @click="addTocart(product)"> Add to Cart </button>
     </div>  
     </div>
 </template>
@@ -25,17 +25,19 @@ export default {
             cartitems: []
         };
     },
+    mounted(){
+        // console.log(this.product);
 
-    mounted() {
-        
     },
 
+
     methods: {
-    addTOcart(item){
-        this.cartitems.push(item);
-        console.log(this.cartitems);
-        },
-    }   
+        addTocart(items){
+            this.cartitems.push(items)
+            this.$store.state.cart = [...this.cartitems, items]
+            console.log(this.cartitems)
+        }
+    }
 };
 
 </script>
