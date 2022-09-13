@@ -11,7 +11,7 @@
         <p class="price">Price: {{ product.price}}</p>
     </div>
     <div class="addcard">
-        <button> Add to Cart </button>
+        <button  @click="addTOcart(product)"> Add to Cart </button>
     </div>  
     </div>
 </template>
@@ -22,7 +22,7 @@ export default {
 
     data() {
         return {
-            
+            cartitems: []
         };
     },
 
@@ -31,9 +31,13 @@ export default {
     },
 
     methods: {
-        
-    },
+    addTOcart(item){
+        this.cartitems.push(item);
+        console.log(this.cartitems);
+        },
+    }   
 };
+
 </script>
 
 <style lang="scss" scoped>
