@@ -5,13 +5,24 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    cart: []
+    products: [],
+    // products: null,
+    // cart: []
   },
   getters: {
+    totalItem(state){
+      return state.cart.length
+    }
   },
   mutations: {
+    ADD_ITEM(state,data){
+      state.cart.push(data) 
+    },
   },
   actions: {
+    addItem({commit},data){
+      commit("ADD_ITEM",data)
+    },
   },
   modules: {
   }

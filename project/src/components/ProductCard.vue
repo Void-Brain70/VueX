@@ -32,10 +32,13 @@ export default {
 
 
     methods: {
-        addTocart(items){
-            this.cartitems.push(items)
-            this.$store.state.cart = [...this.cartitems, items]
-            console.log(this.cartitems)
+        // addTocart(items){
+        //     this.cartitems.push(items)
+        //     this.$store.state.cart = [...this.cartitems, items]
+        //     console.log(this.cartitems)
+        // }
+        addTocart(){
+            this.$store.dispatch('addItem',this.cartitem)
         }
     }
 };
